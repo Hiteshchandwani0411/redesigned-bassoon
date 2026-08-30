@@ -3,7 +3,7 @@
 The **Dynamic Skill Assessment Engine** combines passive code profiling, pre-computed adaptive testing, and strict anti-cheat mechanisms. This blueprint outlines the MERN-stack architecture and presentation narrative for the platform's core assessment workflow.
 
 ---
-
+```text
 [ Admin / Industry Partner ]                    [ Student Registration ]
         │ defines role → subtopic list                     │
         ▼                                                  ▼
@@ -79,6 +79,7 @@ The **Dynamic Skill Assessment Engine** combines passive code profiling, pre-com
           versioned, expiresAt: +6 months
           → feeds Course/Job/Industry
             recommendation engine (shared contract)
+```
 
 ---
 
