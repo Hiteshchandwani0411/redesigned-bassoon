@@ -92,12 +92,12 @@ Standard string-matching fails on semantic relationships (a search for "Node.js"
 
 ```mermaid
 flowchart LR
-    S[Student missing skills<br/>verifiedTags + skillGap] --> E1[Sentence-BERT embeddings]
-    C[Course / Job / Industry skill tags<br/>precomputed vectors] --> E2[Sentence-BERT embeddings]
+    S["Student missing skills<br/>verifiedTags + skillGap"] --> E1["Sentence-BERT embeddings"]
+    C["Course / Job / Industry skill tags<br/>precomputed vectors"] --> E2["Sentence-BERT embeddings"]
     E1 --> M
     E2 --> M
-    M[Cosine similarity score<br/>cos(θ) = A·B / ‖A‖·‖B‖] --> F[Hard eligibility filtering<br/>level & prerequisites]
-    F --> R[Ranked recommendations<br/>top_k]
+    M["Cosine similarity score<br/>cos(θ) = A·B / ‖A‖·‖B‖"] --> F["Hard eligibility filtering<br/>level & prerequisites"]
+    F --> R["Ranked recommendations<br/>top_k"]
 ```
 
 Docs: [`features/skill_mapping.md`](features/skill_mapping.md)
